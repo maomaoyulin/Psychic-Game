@@ -32,16 +32,17 @@ document.onkeyup = function(event) {
             guessesLeft = 9;
         }
 
-        var html = "<p>You Chose:  " + userGuess + "</p>" +
-        "<p>The computer chose: " + computerGuess + "</p>" +
-        "<p>Wins: " + wins + "</p>" +
-        "<p>Losses: " + losses + "</p>" +
-        "<p>Guess Left: " + guessesLeft + "</p>";
-
-        document.getElementById("game").innerHTML = html;
-
     }else {
         alert("Please pick a valid key to play");
     }
 
+    var html = "<p>You Chose:  " + userGuess + "</p>" +
+    "<p>The computer chose: " + computerGuess + "</p>" +
+    "<p>Wins: " + wins + "</p>" +
+    "<p>Losses: " + losses + "</p>" +
+    "<p>Guess Left: " + guessesLeft + "</p>";
+
+    document.getElementById("play").innerHTML = html;
 }
+
+
